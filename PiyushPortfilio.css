@@ -1,0 +1,335 @@
+html{
+    scroll-behavior:smooth;     
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+      height: 2000px; /* Used to enable scrolling */
+  background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);
+}
+.Intro {
+    font-size: 80px;
+    margin-top: 0px;
+    color: white;
+    background: #333333;
+    animation: introtext 2s 1;
+    position: relative;
+}
+
+.Intro_comment {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #e1f4f3;
+    animation: commenttext 3s 1;
+}
+@keyframes introtext {
+    0%{
+        color: #333333;
+        padding-top: 60px;
+        margin-bottom: -80px;
+    }
+    80%{
+        margin-bottom: -80px;
+    }
+}
+
+@keyframes commenttext {
+    0%{
+        margin-bottom: 80px;
+    }
+    80%{
+        margin-bottom: 80px;
+    }
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border:2px solid grey;
+    border-top-color: transparent;
+    box-shadow: black;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: right;
+    padding-right: 15%;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.Header {
+    background-color: #333333;
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+.Header .My_name {
+    float: left;
+    color: wheat;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.My_name  a{
+    color: white;
+    size: 10px;
+    font-size:20px;
+    text-decoration: none;
+}
+
+.Header .Menu_Icon{
+    float: right;
+    text-align: center;
+    padding: 0px 20px;
+    font-size: 38px;
+    color:  white;
+}
+
+.main_content {
+    margin-top: 51.2px;
+}
+
+.intro_page {
+    padding: 240px;
+    text-align: center;
+    background-color: #333333;
+}
+.About {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 100px;
+    border-bottom: thick solid #00cccc;
+    background-image: url(about.png)
+}
+
+.My_Photo {
+    flex: 30%;
+    background-color: black;
+    border-radius: 20px;
+}
+.About_Me_heading{
+    margin-left: 80px;
+}
+.About_Me {
+    flex: 40%;
+    padding-left: 20%;
+    padding-top: 15%;
+    margin-top: 0px;
+}
+
+.about_info{
+    font-size: larger;
+    font-weight: 500;
+    color: white;
+}
+
+.profile_pic {
+    width: 457px;
+    border-radius: 30px;
+    height: 500px;
+    padding: 20px 0;
+}
+
+.About_Me_heading {
+    font-size: 60px;
+    color: white;
+    text-decoration: underline;
+    padding-left: 80px;
+}
+
+.footer {
+    background-color: #b3b3b3;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.Contact_text {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: white;
+}
+.Contact_info{
+    margin-top: 50px;
+    height: 10%;
+}
+.Contact_info a:hover{
+    box-shadow: 2px 2px 2px lightblue;
+}
+.Contact_info a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+.x{
+    background-color:#33d6ff;
+    margin: 0 100px -12px 100px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.30);
+    padding-bottom: 75px;
+}
+.Contact_info a img{
+    color: white;
+    width: 45px;
+    font-size: 20px;
+}
+.skills {
+    background-color: #e1f4f3;
+    padding-bottom: 30px;
+}
+
+.skills_heading {
+    font-size: 60px;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+.skills_content {
+    width: 1000px;
+    margin: auto;
+}
+
+.Skills_Text {
+    padding: 15px;
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 0px;
+}
+
+.Bar {
+    background: white;
+    display: block;
+    height: 9px;
+    border: 1px solid rgba(0, 0, #333333, 0.3);
+    box-shadow: 0 0 14px 3px #70dbdb;
+    border-radius: 2px;
+}
+
+.C_programming {
+    height: 9px;
+    float: left;
+    background: #00ace6;
+    width: 85%;
+    border-radius: 2px;
+}
+
+.Cpp_programming {
+    height: 9px;
+    float: left;
+    background: #00ace6;
+    width: 70%;
+    border-radius: 2px;
+}
+
+.javascript_programming {
+    height: 9px;
+    float: left;
+    background: #00ace6;
+    width: 55%;
+    border-radius: 2px;
+}
+
+.HTML_programming {
+    height: 9px;
+    float: left;
+    background: #00ace6;
+    width: 88%;
+    border-radius: 2px;
+}
+
+.CSS_programming {
+    height: 9px;
+    float: left;
+    background: #00ace6;
+    width: 73%;
+    border-radius: 2px;
+}
+
+.SQL_work {
+    height: 9px;
+    float: left;
+    background:  #00ace6;
+    width: 52%;
+    border-radius: 2px;
+}
+
+.photoshop_work {
+    height: 9px;
+    float: left;
+    background: #00ace6;
+    width: 88%;
+    border-radius: 2px;
+}
+.submit{
+    background-color: #00b8e6;
+    font-size: 20px;
+    margin: 20px 0 -10px 2px;
+    padding: 10px 10px 10px 10px;
+    width: 18%;
+    border-style: hidden;
+    border-color: white;
+}
+
+.submit:hover{
+    box-shadow: 0 0 15px blue;
+    color: white;
+    border-color: white;
+}
+.input{
+    width: 320px;
+    color: white;
+    font-size: 20px;
+    padding: 8px 10px 8px 10px; 
+    border-style: hidden;
+    background-color: transparent; 
+    border-bottom: thin solid black;
+}
+.contact-form {
+    border-top:thick solid #a6a6a6;
+    background-color: transparent;
+    background: lightblue;
+    padding: 30px 409px 60px 410px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.30);
+    font-size: 15px;
+}
+.container-contact {
+    display: block;
+    color: lightblue;
+    max-height: 1000p;
+    background-color: #12121;
+    overflow-y: hidden;
+    display: flex;
+}
+.foot{
+    background-color:#4d4d4d;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 0.3vh;
+}
